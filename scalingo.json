@@ -1,32 +1,16 @@
 {
   "name": "webnify-bot",
-  "description": "Telegram bot for Web-Nify payment services",
-  "website": "https://webnify.example.com",
-  "repository": "https://github.com/yourusername/webnify-bot",
-  "logo": "https://webnify.example.com/logo.png",
-  "success_url": "/",
-  "scripts": {
-    "postdeploy": "python database.py"
-  },
+  "description": "Telegram bot for Web-Nify",
   "env": {
     "BOT_TOKEN": {
       "description": "Telegram Bot Token",
-      "required": true
+      "value": "8538212357:AAHWsvcYOsccLcI-m9C3XI1lPd19I1fszfE"
     },
     "OWNER_ID": {
       "description": "Owner Telegram ID",
-      "required": true
+      "value": "8294608065"
     }
   },
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "S"
-    }
-  },
-  "addons": [
-    "postgresql"
-  ],
   "buildpacks": [
     {
       "url": "heroku/python"
